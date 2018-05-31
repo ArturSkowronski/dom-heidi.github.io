@@ -1,3 +1,7 @@
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+  })
+  
 $(function() {
 
     $("input,textarea").jqBootstrapValidation({
@@ -18,7 +22,7 @@ $(function() {
                 firstName = name.split(' ').slice(0, -1).join(' ');
             }
             $.ajax({
-                url: "//formspree.io/articles.pl@gmail.com",
+                url: "//formspree.io/hsdheidi@gmail.com",
                 type: "POST",
                 data: {
                     name: name,
