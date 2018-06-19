@@ -1,65 +1,90 @@
 <!-- Portfolio Grid Section -->
-    <section id="portfolio" class="bg-light-gray">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Galeria</h2>
-                    <p class="text-muted">W trakcie tworzenia</p>
+{% assign column1 = "dh1,dh3,dh5,dh8" | split: "," %}
+{% assign column2 = "dh9,dh12,dh15,dh18" | split: "," %}
+{% assign column3 = "dh19,dh21,dh26,dh32" | split: "," %}
+{% assign column4 = "dh37,dh40,dh47,dh51" | split: "," %}
+{% assign column5 = "dh58,dh60,dh61,dh66" | split: "," %}
+{% assign column6 = "dh70,dh72,dh73,dh80" | split: "," %}
+{% assign column7 = "dh81,dh87,dh93,dh102" | split: "," %}
+{% assign column8 = "dh109,dh110,dh113,dh114" | split: "," %}
+{% assign column9 = "dh115,dh117,dh120,dh122" | split: "," %}
+
+<section id="portfolio" class="bg-light-gray">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading">Galeria</h2>
+            </div>
+        </div>
+        <div class="row perfundo js-perfundo">
+            <div class="gallery-row">
+                <div class="gallery-column">
+                        {% for picture in column1 %}
+                        <a rel="gallery-1" href="img/photos/{{ picture }}.jpg" class="swipebox">
+                            <img width="100%" src="img/photo_m/{{ picture }}.jpg">
+                        </a>
+                        {% endfor %}
+                </div>
+                <div class="gallery-column">
+                        {% for picture in column2 %}
+                        <a rel="gallery-1" href="img/photos/{{ picture }}.jpg" class="swipebox">
+                            <img width="100%" src="img/photo_m/{{ picture }}.jpg">
+                        </a>
+                        {% endfor %}
+                </div>
+                <div class="gallery-column">
+                    {% for picture in column3 %}
+                    <a rel="gallery-1" href="img/photos/{{ picture }}.jpg" class="swipebox">
+                        <img width="100%" src="img/photo_m/{{ picture }}.jpg">
+                    </a>
+                    {% endfor %}
+                </div>
+                <div class="gallery-column">
+                        {% for picture in column4 %}
+                        <a rel="gallery-1" href="img/photos/{{ picture }}.jpg" class="swipebox">
+                            <img width="100%" src="img/photo_m/{{ picture }}.jpg">
+                        </a>
+                        {% endfor %}
+                </div>
+                <div class="gallery-column">
+                        {% for picture in column5 %}
+                        <a rel="gallery-1" href="img/photos/{{ picture }}.jpg" class="swipebox">
+                            <img width="100%" src="img/photo_m/{{ picture }}.jpg">
+                        </a>
+                        {% endfor %}
+                </div>
+                <div class="gallery-column">
+                        {% for picture in column6 %}
+                        <a rel="gallery-1" href="img/photos/{{ picture }}.jpg" class="swipebox">
+                            <img width="100%" src="img/photo_m/{{ picture }}.jpg">
+                        </a>
+                        {% endfor %}
+                </div>
+                <div class="gallery-column">
+                        {% for picture in column7 %}
+                        <a rel="gallery-1" href="img/photos/{{ picture }}.jpg" class="swipebox">
+                            <img width="100%" src="img/photo_m/{{ picture }}.jpg">
+                        </a>
+                        {% endfor %}
+                </div>
+                <div class="gallery-column">
+                        {% for picture in column8 %}
+                        <a rel="gallery-1" href="img/photos/{{ picture }}.jpg" class="swipebox">
+                            <img width="100%" src="img/photo_m/{{ picture }}.jpg">
+                        </a>
+                        {% endfor %}
+                </div>
+                <div class="gallery-column">
+                        {% for picture in column9 %}
+                        <a rel="gallery-1" href="img/photos/{{ picture }}.jpg" class="swipebox" title="My Caption">
+                            <img width="100%" src="img/photo_m/{{ picture }}.jpg">
+                        </a>
+                        {% endfor %}
                 </div>
             </div>
-            <!-- <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h3 class="text-center">Hotelik</h3>
-                </div>
-                <div class="col-lg-12 text-center">
-                    <h3 class="text-center">Malownicza okolica</h3>
-                </div>
-                <div class="col-lg-12 text-center">
-                    <h3 class="text-center">Zwierzęta</h3>
-                </div>
-                <div class="col-lg-12 text-center">
-                    <h3 class="text-center">Nasza Rodzina</h3>
-                    <div class="col-lg-12 text-center">
-
-                    <div class="col-md-2 col-sm-6">
-                        <div class="team-member">
-                            <img src="img/family/heidi.jpg" class="img-responsive img-circle" alt="">
-                            <h4>Heidi [*]</h4>
-                        </div>
-                    </div>
-                    <div class="col-md-2 col-sm-6">
-                        <div class="team-member">
-                            <img src="img/team/1.jpg" class="img-responsive img-circle" alt="">
-                            <h4>Heidi [*]</h4>
-                        </div>
-                    </div>
-                    <div class="col-md-2 col-sm-6">
-                        <div class="team-member">
-                            <img src="img/team/1.jpg" class="img-responsive img-circle" alt="">
-                            <h4>Heidi [*]</h4>
-                        </div>
-                    </div>
-                    <div class="col-md-2 col-sm-6">
-                        <div class="team-member">
-                            <img src="img/team/1.jpg" class="img-responsive img-circle" alt="">
-                            <h4>Heidi [*]</h4>
-                        </div>
-                    </div>
-                    <div class="col-md-2 col-sm-6">
-                        <div class="team-member">
-                            <img src="img/team/1.jpg" class="img-responsive img-circle" alt="">
-                            <h4>Heidi [*]</h4>
-                        </div>
-                    </div>
-                    <div class="col-md-2 col-sm-6">
-                        <div class="team-member">
-                            <img src="img/team/1.jpg" class="img-responsive img-circle" alt="">
-                            <h4>Heidi [*]</h4>
-                        </div>
-                    </div>
-
-                </div>
-                </div>
-            </div> -->
         </div>
-    </section>
+    </div>
+</section>
+<!-- <div class="gallery-column">
+                   
+                </div> -->

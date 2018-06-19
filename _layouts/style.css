@@ -1,3 +1,4 @@
 {% include css/bootstrap.min1.css %}
 {% include css/agency.css %}
-{{ content }}
+{% include css/swipebox.min.css %}
+{{content}}
