@@ -44,7 +44,9 @@ people:
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
   - title: instagram
-    url: http://instagram.com
+    url: https://www.instagram.com/hsdomheidi/
+  - title: facebook
+    url: https://www.facebook.com/domheidi/
 
 # Postal address (add as many lines as necessary)
 address:
